@@ -5,8 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" defer>
 	<link rel="stylesheet" href="./assets/style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="https://fonts.googleapis.com"defer >
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin defer>
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
 	<meta charset="UTF-8" defer>
 	<script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
@@ -42,7 +42,11 @@
 					</div>
 					<div class="carousel-inner">
 						<div class="carousel-item active">
-							<img src="./assets/images/slider/ryoji-iwata.webp" class="d-block w-100" alt="ryoji-iwata">
+							<picture>
+								<source media="(min-width: 769px)" srcset="./assets/images/slider/ryoji-iwata.webp">
+								<source media="(max-width: 768px)" srcset="./assets/images/slider/ryoji-iwata-small.webp">
+								<img src="./assets/images/slider/ryoji-iwata.webp" class="d-block w-100" alt="ryoji-iwata">
+							</picture>
 						</div>
 						<div class="carousel-item">
 							<img src="./assets/images/slider/nicholas-green.webp" class="d-block w-100" alt="nicholas-green" loading="lazy">
