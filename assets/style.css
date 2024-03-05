@@ -333,3 +333,6 @@ header .nav, header .nav ul {
 		width: 80%;
 	}
 }
+.schema-data {
+	display: none;
+}
